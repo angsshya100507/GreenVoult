@@ -515,15 +515,15 @@ function Home({
 
 function CityVisual({ city }) {
   const cityImages = {
-    Trichy: "/trichy.jpg",
-    Tiruchirappalli: "/trichy.jpg",
-    Chennai: "/chennai.jpg",
-    Coimbatore: "/coimbatore.jpg",
-    Madurai: "/madurai.jpg",
-    Salem: "/salem.jpg",
-    Tirunelveli: "/tirunelveli.jpg",
-    Erode: "/erode.jpg",
-    Thanjavur: "/thanjavur.jpg",
+    Trichy: `${import.meta.env.BASE_URL}trichy.jpg`,
+    Tiruchirappalli: `${import.meta.env.BASE_URL}trichy.jpg`,
+    Chennai: `${import.meta.env.BASE_URL}chennai.jpg`,
+    Coimbatore: `${import.meta.env.BASE_URL}coimbatore.jpg`,
+    Madurai: `${import.meta.env.BASE_URL}madurai.jpg`,
+    Salem: `${import.meta.env.BASE_URL}salem.jpg`,
+    Tirunelveli: `${import.meta.env.BASE_URL}tirunelveli.jpg`,
+    Erode: `${import.meta.env.BASE_URL}erode.jpg`,
+    Thanjavur: `${import.meta.env.BASE_URL}thanjavur.jpg`,
   };
 
   return (
@@ -1149,7 +1149,7 @@ function TreesPage({
 
           <div className="selected-tree-image">
             <img
-              src="/city2.jpg"
+              src={`${import.meta.env.BASE_URL}city2.jpg`}
               alt="GreenVolt Tree"
               onError={(e) => {
                 e.currentTarget.style.display = "none";
